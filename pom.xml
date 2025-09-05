@@ -36,12 +36,18 @@
       <version>3.24.2</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>com.aventstack</groupId>
-      <artifactId>extentreports</artifactId>
-      <version>5.0.9</version>
-    </dependency>
-  </dependencies>
+<dependency>
+  <groupId>com.aventstack</groupId>
+  <artifactId>extentreports</artifactId>
+  <version>5.0.9</version>
+  <exclusions>
+    <exclusion>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </exclusion>
+  </exclusions>
+</dependency>
+</dependencies>
 
   <build>
     <plugins>
